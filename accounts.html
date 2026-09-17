@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounts &mdash; BotWithUs Launcher Guide</title>
+<meta name="description" content="Add a Jagex Account to the BotWithUs Launcher, launch a character, and manage your saved accounts.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<nav class="bwu-nav">
+  <button class="bwu-menu-btn" id="menuBtn" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+  <a class="bwu-brand" href="index.html"><i class="bi bi-robot"></i> BotWithUs <span class="bwu-brand-sub">Launcher Guide</span></a>
+  <div class="bwu-nav-links">
+    <a href="https://botwithus.com/"><i class="bi bi-house-door"></i> Website</a>
+    <a href="https://botwithus.com/sdn/"><i class="bi bi-bag"></i> Script Market</a>
+    <a href="https://wiki.botwithus.net/"><i class="bi bi-book"></i> Wiki</a>
+  </div>
+</nav>
+
+<div class="bwu-shell">
+<aside class="bwu-sidebar" id="sidebar">
+  <div class="bwu-cat">Getting started</div>
+  <a class="bwu-navitem" href="index.html"><i class="bi bi-rocket-takeoff"></i> Get started</a>
+  <a class="bwu-navitem active" href="accounts.html"><i class="bi bi-person-badge"></i> Accounts</a>
+  <div class="bwu-cat">Scripting</div>
+  <a class="bwu-navitem" href="scripting.html"><i class="bi bi-code-square"></i> Scripting framework</a>
+  <div class="bwu-cat">Advanced</div>
+  <a class="bwu-navitem" href="arguments.html"><i class="bi bi-sliders"></i> Framework arguments</a>
+  <a class="bwu-navitem" href="cli.html"><i class="bi bi-terminal"></i> Command line</a>
+</aside>
+
+<main class="bwu-main">
+<div class="bwu-content">
+
+<div class="bwu-eyebrow">Accounts</div>
+<h1>Adding and managing accounts</h1>
+<p class="bwu-lead">RuneScape now requires a Jagex Account. You sign in once through the launcher,
+it fetches your characters for you, and from then on launching one is a single click.</p>
+
+<h2 id="add">Add your first account</h2>
+
+<ol class="bwu-steps">
+  <li>
+    <span class="bwu-step-title">Open <span class="ui"><i class="bi bi-person-badge"></i>Accounts</span></span>
+    <p>It is the first item in the sidebar. On a fresh install you will see
+    <span class="ui">Add your first account</span>.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Click <span class="ui">Add Jagex account</span></span>
+    <p>You will find it on the <span class="ui">ADD AN ACCOUNT</span> card.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Sign in and accept the consent screen</span>
+    <p>The launcher opens the Jagex sign-in for you. Complete it exactly as you would on the
+    Jagex website, including any verification code.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Your characters arrive on their own</span>
+    <p>When it succeeds the launcher tells you how many characters it found &mdash;
+    <em>&ldquo;Added 3 Jagex character(s). Pick one and continue.&rdquo;</em> You never type a
+    character name in by hand.</p>
+  </li>
+</ol>
+
+<p>Repeat for as many accounts as you like. Each one becomes its own card under
+<span class="ui">JAGEX ACCOUNTS</span>.</p>
+
+<h2 id="launch">Launch a character</h2>
+
+<ol class="bwu-steps">
+  <li>
+    <span class="bwu-step-title">Click the account card to expand it</span>
+    <p>The card shows how many characters it holds. Clicking it (or the chevron on the right)
+    opens the list. With more than one account you also get
+    <span class="ui">Expand all</span> / <span class="ui">Collapse all</span>.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Press <span class="ui">Launch</span> next to the character you want</span>
+    <p>The launcher does the rest. Progress is reported as it goes, and the session then appears
+    under <span class="ui"><i class="bi bi-activity"></i>Monitor</span>.</p>
+  </li>
+</ol>
+
+<div class="bwu-callout tip">
+  <div class="bwu-callout-title"><i class="bi bi-lightbulb-fill"></i> The framework is separate</div>
+  <p>Launching a character starts the game. Your scripting framework is started from
+  <span class="ui">Script Hub</span>, and the two are independent &mdash; you can start them in
+  either order. <a href="scripting.html">See Scripting framework &rarr;</a></p>
+</div>
+
+<h2 id="manage">Rename and remove</h2>
+
+<p>Each account card carries two buttons.</p>
+
+<div class="bwu-tablewrap">
+<table class="bwu-table">
+  <thead><tr><th>Button</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><span class="ui">Rename</span></td>
+      <td>Sets a nickname so you can tell accounts apart at a glance. It is a label in the
+      launcher only &mdash; nothing about the account itself changes. Clear the box to go back to
+      the Jagex name.</td>
+    </tr>
+    <tr>
+      <td><span class="ui">Remove</span></td>
+      <td>Deletes the launcher&rsquo;s saved session and character list for that account.
+      <strong>Your game progress is not affected</strong>, and you can add the account back at any
+      time by signing in again.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="bwu-callout note">
+  <div class="bwu-callout-title"><i class="bi bi-info-circle-fill"></i> A new account shows no characters yet</div>
+  <p>A freshly added Steam-edition account says <em>&ldquo;Characters populate after the first
+  launch.&rdquo;</em> That is expected &mdash; the list fills in once the game has been through the
+  lobby once.</p>
+</div>
+
+<h2 id="auto-code">Optional: fill in the emailed code automatically</h2>
+
+<p>Jagex emails a six-digit verification code when you sign in. The launcher can type that code in
+for you instead of you fetching it from your inbox. The toggle is
+<span class="ui">Fill in the emailed code for me</span>, on the
+<span class="ui">ADD AN ACCOUNT</span> card.</p>
+
+<p><strong>It is off by default.</strong> With it off, signing in behaves exactly as it always has.</p>
+
+<div class="bwu-callout caution">
+  <div class="bwu-callout-title"><i class="bi bi-exclamation-triangle-fill"></i> It needs a desktop mail client</div>
+  <p>This works by a rule in a mail program <em>running on this PC</em> &mdash; Thunderbird, or the
+  classic Outlook desktop app &mdash; handing the code to the launcher locally.</p>
+  <p class="mt-2"><strong>If you only use webmail</strong> (Gmail or Outlook.com in a browser, with
+  nothing installed) there is no hands-free option. Leave the toggle off and type the code in, which
+  works exactly as it always did.</p>
+</div>
+
+<p>To set the rule up, run this and follow what it prints:</p>
+
+<pre><code><span class="c"># in %LOCALAPPDATA%\Programs\BotWithUs\Launcher</span>
+.\bwu_cli.exe jagex mail-setup</code></pre>
+
+<p>It prints the current instructions for your mail client. Run it again whenever you need them
+&mdash; it is the up-to-date source, so nothing here can go stale on you.
+<a href="cli.html">More on the command line &rarr;</a></p>
+
+<div class="bwu-callout note">
+  <div class="bwu-callout-title"><i class="bi bi-shield-check"></i> The launcher never holds your email password</div>
+  <p>There is no mail client inside the launcher, no stored app password, and no sign-in to your
+  email provider. It only accepts a code handed to it by something already running on your own
+  machine.</p>
+</div>
+
+<h2 id="monitor">Watching your sessions</h2>
+
+<p><span class="ui"><i class="bi bi-activity"></i>Monitor</span> lists the sessions you launched
+from this launcher.</p>
+
+<ul>
+  <li>Each row shows the character, how long it has been up, and its process id.</li>
+  <li><span class="ui">Stop</span> ends that session.</li>
+  <li>The <span class="ui">Auto-restart</span> toggle decides what happens if a session exits on its
+  own &mdash; on, the launcher brings it back; off, it stays closed.</li>
+</ul>
+
+<p class="bwu-muted">Nothing here yet? You will see <em>&ldquo;No attached sessions. Launch a client
+from the Accounts tab.&rdquo;</em></p>
+
+<h2 id="steam">Steam-linked accounts</h2>
+
+<p>Steam-edition accounts appear in their own <span class="ui">STEAM ACCOUNTS</span> section and
+behave the same way once added. Setting one up is not covered by this guide yet &mdash; ask in
+<a href="https://botwithus.com/support/">support</a> and we will walk you through it.</p>
+
+<nav class="bwu-pagenav">
+  <a href="index.html">
+    <span class="bwu-pagenav-label">Previous</span>
+    <span class="bwu-pagenav-title">&larr; Get started</span>
+  </a>
+  <a class="next" href="scripting.html">
+    <span class="bwu-pagenav-label">Next</span>
+    <span class="bwu-pagenav-title">Scripting framework &rarr;</span>
+  </a>
+</nav>
+
+<footer class="bwu-footer">
+  <div>BotWithUs Launcher Guide</div>
+  <div>
+    <a href="https://botwithus.com/">botwithus.com</a> &middot;
+    <a href="https://wiki.botwithus.net/">Wiki</a> &middot;
+    <a href="https://botwithus.com/support/">Support</a>
+  </div>
+</footer>
+
+</div>
+</main>
+</div>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click', function () {
+  document.body.classList.toggle('bwu-navopen');
+});
+</script>
+</body>
+</html>

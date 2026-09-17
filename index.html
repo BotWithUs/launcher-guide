@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get started &mdash; BotWithUs Launcher Guide</title>
+<meta name="description" content="Install the BotWithUs Launcher, sign in, and find your way around it.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<nav class="bwu-nav">
+  <button class="bwu-menu-btn" id="menuBtn" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+  <a class="bwu-brand" href="index.html"><i class="bi bi-robot"></i> BotWithUs <span class="bwu-brand-sub">Launcher Guide</span></a>
+  <div class="bwu-nav-links">
+    <a href="https://botwithus.com/"><i class="bi bi-house-door"></i> Website</a>
+    <a href="https://botwithus.com/sdn/"><i class="bi bi-bag"></i> Script Market</a>
+    <a href="https://wiki.botwithus.net/"><i class="bi bi-book"></i> Wiki</a>
+  </div>
+</nav>
+
+<div class="bwu-shell">
+<aside class="bwu-sidebar" id="sidebar">
+  <div class="bwu-cat">Getting started</div>
+  <a class="bwu-navitem active" href="index.html"><i class="bi bi-rocket-takeoff"></i> Get started</a>
+  <a class="bwu-navitem" href="accounts.html"><i class="bi bi-person-badge"></i> Accounts</a>
+  <div class="bwu-cat">Scripting</div>
+  <a class="bwu-navitem" href="scripting.html"><i class="bi bi-code-square"></i> Scripting framework</a>
+  <div class="bwu-cat">Advanced</div>
+  <a class="bwu-navitem" href="arguments.html"><i class="bi bi-sliders"></i> Framework arguments</a>
+  <a class="bwu-navitem" href="cli.html"><i class="bi bi-terminal"></i> Command line</a>
+</aside>
+
+<main class="bwu-main">
+<div class="bwu-content">
+
+<div class="bwu-eyebrow">Getting started</div>
+<h1>Get started with the launcher</h1>
+<p class="bwu-lead">The BotWithUs Launcher is the one app you open: it signs you in, keeps your
+accounts, starts RuneScape, and starts your scripting framework. This guide takes you from a
+fresh install to a running script.</p>
+
+<h2 id="install">1. Install it</h2>
+
+<ol class="bwu-steps">
+  <li>
+    <span class="bwu-step-title">Download the installer</span>
+    <p>Grab <code>BotWithUs.msi</code> from <a href="https://botwithus.com/download">botwithus.com/download</a> and run it.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Let it install for your user account</span>
+    <p>It installs to <code>%LOCALAPPDATA%\Programs\BotWithUs\Launcher</code> and adds a
+    <span class="ui">BotWithUs Launcher</span> shortcut to your Start menu.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Open it from the Start menu</span>
+    <p>The shortcut should open the launcher straight away.</p>
+  </li>
+</ol>
+
+<div class="bwu-callout caution">
+  <div class="bwu-callout-title"><i class="bi bi-exclamation-triangle-fill"></i> You should never be asked for an administrator password</div>
+  <p>The installer is per-user and needs no elevation. If a User Account Control prompt appears,
+  stop and tell us &mdash; that points at a problem with the package, not with your PC.</p>
+</div>
+
+<div class="bwu-callout note">
+  <div class="bwu-callout-title"><i class="bi bi-info-circle-fill"></i> If Windows SmartScreen warns you</div>
+  <p>Click <span class="ui">More info</span> &rarr; <span class="ui">Run anyway</span>. If your browser
+  deletes the download outright instead of warning you, let us know &mdash; that is worth hearing about.</p>
+</div>
+
+<h2 id="sign-in">2. Sign in</h2>
+
+<p>The first thing the launcher shows is a sign-in screen.</p>
+
+<ol class="bwu-steps">
+  <li>
+    <span class="bwu-step-title">Click <span class="ui">Sign in with Discord</span></span>
+    <p>Your browser opens. Finish signing in there, then switch back to the launcher &mdash; it picks
+    up the result on its own.</p>
+  </li>
+  <li>
+    <span class="bwu-step-title">Wait out the first-run download</span>
+    <p>On its first run the launcher fetches the pieces it needs and keeps them up to date afterwards.
+    Let the progress finish before you launch anything.</p>
+  </li>
+</ol>
+
+<p class="bwu-muted">Already have a token from the website? <span class="ui">Use a saved token</span>
+signs you in with that instead.</p>
+
+<h2 id="tour">3. Find your way around</h2>
+
+<p>Everything lives in the left sidebar:</p>
+
+<div class="bwu-tablewrap">
+<table class="bwu-table">
+  <thead><tr><th>Sidebar item</th><th>What it is for</th></tr></thead>
+  <tbody>
+    <tr><td><span class="ui"><i class="bi bi-person-badge"></i>Accounts</span></td>
+        <td>Add accounts, and launch a character. <a href="accounts.html">Full guide &rarr;</a></td></tr>
+    <tr><td><span class="ui"><i class="bi bi-activity"></i>Monitor</span></td>
+        <td>The sessions you have launched, with their uptime and a Stop button.</td></tr>
+    <tr><td><span class="ui"><i class="bi bi-bag"></i>Script Market</span></td>
+        <td>Opens the script marketplace in your browser.</td></tr>
+    <tr><td><span class="ui"><i class="bi bi-code-square"></i>Script Hub</span></td>
+        <td>Launch your scripting framework. <a href="scripting.html">Full guide &rarr;</a></td></tr>
+    <tr><td><span class="ui"><i class="bi bi-wrench"></i>Diagnostics</span></td>
+        <td>Details about this machine. Support may ask you to copy your hardware ID from here.</td></tr>
+    <tr><td><span class="ui"><i class="bi bi-gear"></i>Preferences</span></td>
+        <td>Your account, and where scripting frameworks are configured.
+        <a href="arguments.html">Full guide &rarr;</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="bwu-callout tip">
+  <div class="bwu-callout-title"><i class="bi bi-lightbulb-fill"></i> Know your version number</div>
+  <p>The launcher prints its version in the bottom corner. Quote that number whenever you ask for
+  help &mdash; it is the fastest way for anyone to tell what you are running.</p>
+</div>
+
+<h2 id="updates">Keeping it up to date</h2>
+
+<p>When a newer build is published, a <span class="ui">Launcher update</span> notice appears at the
+top of the launcher.</p>
+
+<ul>
+  <li><span class="ui">Download</span> fetches the new <code>BotWithUs.msi</code> in your browser.
+  Run it the same way you ran the first one &mdash; there is no need to uninstall anything first.</li>
+  <li><span class="ui">Not now</span> hides the notice until you next open the launcher.</li>
+</ul>
+
+<p>The pieces the launcher downloads for itself are separate, and update themselves each time it
+starts.</p>
+
+<h2 id="next">Where to next</h2>
+
+<div class="bwu-cardgrid">
+  <div class="bwu-card">
+    <h3><i class="bi bi-person-badge"></i> Add an account</h3>
+    <p class="bwu-muted">Sign in with your Jagex Account and launch a character.</p>
+    <a href="accounts.html">Accounts &rarr;</a>
+  </div>
+  <div class="bwu-card">
+    <h3><i class="bi bi-code-square"></i> Open the framework</h3>
+    <p class="bwu-muted">Start the scripting framework and pick up scripts.</p>
+    <a href="scripting.html">Scripting framework &rarr;</a>
+  </div>
+  <div class="bwu-card">
+    <h3><i class="bi bi-sliders"></i> Tune it</h3>
+    <p class="bwu-muted">Edit a framework&rsquo;s arguments, or add your own.</p>
+    <a href="arguments.html">Framework arguments &rarr;</a>
+  </div>
+</div>
+
+<nav class="bwu-pagenav">
+  <a class="next" href="accounts.html">
+    <span class="bwu-pagenav-label">Next</span>
+    <span class="bwu-pagenav-title">Accounts &rarr;</span>
+  </a>
+</nav>
+
+<footer class="bwu-footer">
+  <div>BotWithUs Launcher Guide</div>
+  <div>
+    <a href="https://botwithus.com/">botwithus.com</a> &middot;
+    <a href="https://wiki.botwithus.net/">Wiki</a> &middot;
+    <a href="https://botwithus.com/support/">Support</a>
+  </div>
+</footer>
+
+</div>
+</main>
+</div>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click', function () {
+  document.body.classList.toggle('bwu-navopen');
+});
+</script>
+</body>
+</html>
